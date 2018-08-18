@@ -1,0 +1,49 @@
+/* pages/message/message.wxss */
+
+.contain {
+  margin: 15px;
+}
+.form-data {
+  margin-bottom:40rpx;
+}
+.form-data,.input-icon {
+  display: flex;
+  align-items: center;
+}
+.form-data image {
+  margin-right: 10rpx;
+  width: 100rpx;
+}
+.btn-area {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160rpx;
+}
+.btn-area button {
+  width: 45%;
+}
+.input-icon {
+  padding-right: 20rpx;
+}
+.form-data input {
+  padding-left: 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+.total {
+  position: fixed;
+  left:30px;
+  bottom: 300rpx;
+  font-size: 14px;
+}
+.total text {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;  
+  font-size: 20px;
+  color: red;
+}
+ 

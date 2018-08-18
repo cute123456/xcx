@@ -1,0 +1,10 @@
+<view class='contain'>
+<slot></slot>
+  <view class="box">
+    <view class="item" wx:for="{{goods}}" wx:key="index" bindtap="toDetaill" data-id="{{item.id}}">
+      <view class="img-box"><image src="{{item.pic}}" mode="widthFix"></image></view>
+      <text>图片{{index+1}}</text>
+    </view>
+  </view>
+</view>
+

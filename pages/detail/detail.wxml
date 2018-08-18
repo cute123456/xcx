@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view style="margin:15px;">
+  <image src='{{info.pic}}' mode='widthFix' style='width:100%;'></image>
+  <view style='margin-top:20px;'>{{info.content}}</view>
+</view>

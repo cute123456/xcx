@@ -1,0 +1,18 @@
+<!--pages/report/report.wxml-->
+<view class="head">
+    <view bindtap="toRepay">补报</view>
+    <view bindtap="toList">上报记录</view>
+</view>
+<view class="form">
+    <form bindsubmit="formSubmit">
+        <view class="list" wx:for="{{list}}" wx:key="{{item.id}}" wx:if="{{item.type==1}}">
+            <view class="item-list">
+                <image class="img-icon" mode="widthFix" src="{{item.thumb}}"></image>
+                <view class="color-theme">{{item.text}}：</view>
+            </view>
+            <input name="{{item.name}}" bindinput="getToal" data-index="{{index}}" placeholder="请输入金额"  type='digit'/>
+        </view>
+        <button class="btn-area bg-theme" formType="submit">提交</button>
+    </form>
+</view>
+<view class="toal"><text class="color-theme">总金额：</text>{{toal}}</view>

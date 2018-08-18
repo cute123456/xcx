@@ -1,0 +1,33 @@
+/* pages/demo/demo.wxss */
+
+.contain {
+  margin:15px;
+}
+.contain .box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contain .box  .item {
+  margin-bottom:15px;
+  width:48%;
+}
+.box .item image {
+  width:100%;
+}
+.box .item text {
+  padding:20rpx 0;
+  /* box-shadow: 0 0rpx 0 2rpx rgba(0,0,0,0.02); */
+  border:1px solid #f8f8f8;
+  border-top:none;
+  display: block;
+  color: #333;
+  text-align: center;
+  font-size: 28rpx;
+}
+.img-box {
+  display:flex;
+  align-items:center;
+  height: 100px;
+  overflow: hidden;
+}

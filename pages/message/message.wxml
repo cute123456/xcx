@@ -1,0 +1,17 @@
+
+<!--pages/message/message.wxml-->
+<view class="contain">
+   <form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="form-data" wx:for="{{datas}}" wx:key="index">
+    <view class='input-icon'><image mode="widthFix" src='{{item.icon}}'></image>{{item.text}}：</view>
+     <input name="{{item.name}}" placeholder="" autofocus type='digit' data-index="{{index}}" bindinput="inputText" />
+  </view>
+  <view class='total'>总计花费:<text>{{total}}</text>元</view>
+  <view class="btn-area">
+    <button formType="submit" type="primary">提交</button>
+    <button formType="reset" type='default'>重置</button>
+  </view>
+</form>
+</view>
+
