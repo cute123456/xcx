@@ -1,5 +1,0 @@
-@import "../../components/template/template.wxss";
-
-.title {
-  margin-bottom:15px;
-}

@@ -1,9 +1,0 @@
-<!--pages/canvas/canvas.wxml-->
-<view class='my-canvas'>
-    <button wx:if="{{showBt}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <canvas style="margin:0 auto;width: 300px; height: 300px;" canvas-id="firstCanvas"></canvas>
-    <!-- <image wx:if="{{prurl}}" src='{{prurl}}' mode='widthFix'></image> -->
-     <!-- <button class='btn btn-layout btn-width' bindtap="saveImg">生成图片</button>  -->
-    <button class='btn btn-layout btn-width' bindtap="share">保存图片</button>
-    <button class='btn btn-layout btn-width' bindtap="toChat">WebSocket</button>            
-</view>
